@@ -1,0 +1,82 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("java.io.*" include nil nil [1 18])
+            ("java.net.*" include nil nil [19 37])
+            ("control" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [91 104]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67 688])
+                    ("writeJSON" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [694 766]))                  
+                :type "class")
+                nil [40 768]))          
+      :file "control.java"
+      :pointmax 769
+      :fsize 768
+      :lastmodtime '(23001 59746 365833 372000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("JFLAGS" variable (:default-value ("-g")) nil [1 13])
+            ("JC" variable (:default-value ("javac")) nil [13 24])
+            (".SUFFIXES" function (:arguments (".java" ".class")) nil [24 48])
+            (".java.class" function nil nil [48 86])
+            ("CLASSES" variable (:default-value ("control.java")) nil [87 110])
+            ("default" function (:arguments ("classes")) nil [111 128])
+            ("classes" function (:arguments ("$(CLASSES:.java=.class)")) nil [129 162])
+            ("clean" function nil nil [163 185]))          
+      :file "makefile"
+      :pointmax 185
+      :fsize 184
+      :lastmodtime '(23001 48495 112244 996000)
+      :unmatched-syntax '((shell-command 171 . 184) (bol 170 . 170)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("java.io.*" include nil nil [1 18])
+            ("java.net.*" include nil nil [19 37])
+            ("control" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [91 104]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67 690])
+                    ("writeJSON" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [696 768]))                  
+                :type "class")
+                nil [40 770]))          
+      :file "control2.java"
+      :pointmax 771
+      :fsize 770
+      :lastmodtime '(23001 50777 579904 838000)
+      :unmatched-syntax nil))
+  :file "!home!Tristan!Documents!git!azure!java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

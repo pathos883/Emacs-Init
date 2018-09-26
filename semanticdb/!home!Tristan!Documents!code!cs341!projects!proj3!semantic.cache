@@ -1,0 +1,539 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [29 48])
+            ("ExpBST" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [68 75])
+                    ("ExpBST" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [78 87])
+                    ("ExpBST" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [97 107])
+                            ("minHeight" variable (:type "int") (reparse-symbol arg-sub-list) [108 122])
+                            ("factor" variable (:type "float") (reparse-symbol arg-sub-list) [123 136]))                          
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [90 137])
+                    ("ExpBST" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ExpBST" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [147 167]))                          
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [140 168])
+                    ("ExpBST" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [171 181])
+                    ("Update" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [185 199])
+                    ("getMaxRebalanceDepth" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [205 238])
+                    ("getMinRebalanceHeight" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [241 275])
+                    ("getRebalanceFactor" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "float")
+                        (reparse-symbol classsubparts) [278 311])
+                    ("=" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("ExpBST" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [339 357]))                          
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [315 358])
+                    ("insert" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [374 382]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [362 383])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [398 406]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [386 407])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [420 428]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [410 429])
+                    ("getNumRebalance" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [433 461])
+                    ("getFailedRebalance" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [464 495])
+                    ("getExceedsHeight" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [498 527])
+                    ("resetStats" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :type "void")
+                        (reparse-symbol classsubparts) [530 555])
+                    ("inorder" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [561 576])
+                    ("locate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("position" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [591 612])
+                            ("key" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [613 622]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [579 623])
+                    ("empty" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [629 648])
+                    ("height" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [651 670])
+                    ("size" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [673 690])
+                    ("private" label nil (reparse-symbol classsubparts) [695 703])
+                    ("m_callsToRebalance" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [706 736])
+                    ("m_callsToRebalanceFailed" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [739 775])
+                    ("m_callsWhereTreeTooTall" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol classsubparts) [778 813])
+                    ("m_data" variable (:type "int") (reparse-symbol classsubparts) [817 828])
+                    ("m_height" variable (:type "int") (reparse-symbol classsubparts) [831 844])
+                    ("m_subSize" variable (:type "int") (reparse-symbol classsubparts) [847 861])
+                    ("m_left" variable
+                       (:pointer 1
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [864 879])
+                    ("m_right" variable
+                       (:pointer 1
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [882 898])
+                    ("m_parent" variable
+                       (:pointer 1
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [901 918])
+                    ("m_maxRebalanceDepth" variable (:type "int") (reparse-symbol classsubparts) [924 948])
+                    ("m_minRebalanceHeight" variable (:type "int") (reparse-symbol classsubparts) [951 976])
+                    ("m_rebalanceFactor" variable (:type "float") (reparse-symbol classsubparts) [979 1003]))                  
+                :type "class")
+                nil [50 1006]))          
+      :file "ExpBST.h"
+      :pointmax 1007
+      :fsize 1006
+      :lastmodtime '(23041 4186 340491 870000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ExpBST.h" include nil nil [1 20])
+            ("ExpBST::m_callsToRebalance" variable
+               (:default-value "0"
+                :type "int")
+                nil [854 889])
+            ("ExpBST::m_callsToRebalanceFailed" variable
+               (:default-value "0"
+                :type "int")
+                nil [890 931])
+            ("ExpBST::m_callsWhereTreeTooTall" variable
+               (:default-value "0"
+                :type "int")
+                nil [932 972])
+            ("ExpBST" function
+               (:constructor-flag t
+                :parent "ExpBST"
+                :type ("ExpBST" type (:type "class") nil nil))
+                nil [974 1111])
+            ("ExpBST" function
+               (:constructor-flag t
+                :parent "ExpBST"
+                :arguments 
+                  ( ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [1128 1138])
+                    ("minHeight" variable (:type "int") (reparse-symbol arg-sub-list) [1139 1153])
+                    ("factor" variable (:type "float") (reparse-symbol arg-sub-list) [1154 1167]))                  
+                :type ("ExpBST" type (:type "class") nil nil))
+                nil [1113 1368])
+            ("ExpBST" function
+               (:constructor-flag t
+                :parent "ExpBST"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1385 1405]))                  
+                :type ("ExpBST" type (:type "class") nil nil))
+                nil [1370 1914])
+            ("ExpBST" function
+               (:destructor-flag t
+                :parent "ExpBST"
+                :type "void")
+                nil [1916 2015])
+            ("getMaxRebalanceDepth" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "int")
+                nil [2017 2091])
+            ("getMinRebalanceHeight" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "int")
+                nil [2093 2169])
+            ("getRebalanceFactor" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "float")
+                nil [2171 2243])
+            ("=" function
+               (:operator-flag t
+                :parent "ExpBST"
+                :constant-flag t
+                :arguments 
+                  ( ("rhs" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2277 2295]))                  
+                :type ("ExpBST" type (:type "class") nil nil))
+                nil [2245 2749])
+            ("insert" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [2771 2779]))                  
+                :type "void")
+                nil [2751 2961])
+            ("insert" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [2985 2993])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("BinaryNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2994 3008]))                  
+                :type "void")
+                nil [2965 3520])
+            ("remove" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3544 3552]))                  
+                :type "bool")
+                nil [3524 3620])
+            ("remove" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3644 3652])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("BinaryNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3653 3667]))                  
+                :type "bool")
+                nil [3624 5921])
+            ("find" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [5943 5951]))                  
+                :type "bool")
+                nil [5925 5983])
+            ("find" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [6003 6011])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("BinaryNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6012 6027]))                  
+                :type "bool")
+                nil [5985 6229])
+            ("getNumRebalance" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "int")
+                nil [6231 6299])
+            ("getFailedRebalance" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "int")
+                nil [6301 6378])
+            ("getExceedsHeight" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "int")
+                nil [6380 6454])
+            ("resetStats" function
+               (:parent "ExpBST"
+                :type "void")
+                nil [6456 6574])
+            ("inorder" function
+               (:parent "ExpBST"
+                :type "void")
+                nil [6576 6686])
+            ("inorder" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("BinaryNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6709 6724]))                  
+                :type "void")
+                nil [6688 6992])
+            ("locate" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("position" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7014 7035])
+                    ("key" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7036 7045]))                  
+                :type "bool")
+                nil [6994 7088])
+            ("locate" function
+               (:parent "ExpBST"
+                :arguments 
+                  ( ("position" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7110 7131])
+                    ("key" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [7132 7141])
+                    ("t" variable
+                       (:pointer 1
+                        :type ("BinaryNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7142 7157]))                  
+                :type "bool")
+                nil [7090 7340])
+            ("empty" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "bool")
+                nil [7342 7394])
+            ("height" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "int")
+                nil [7396 7453])
+            ("size" function
+               (:methodconst-flag t
+                :parent "ExpBST"
+                :type "int")
+                nil [7455 7500]))          
+      :file "ExpBST.cpp"
+      :pointmax 7501
+      :fsize 7500
+      :lastmodtime '(23041 4187 403524 671000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXXFLAGS" variable (:default-value ("-std=c++98" "-gstabs")) nil [1 31])
+            ("a1" function (:arguments ("driver.cpp" "ExpBST.o")) nil [32 97])
+            ("all" function nil nil [98 184])
+            ("t1" function (:arguments ("p3test1.cpp" "ExpBST.o")) nil [263 334])
+            ("t2" function (:arguments ("p3test2.cpp" "ExpBST.o")) nil [334 405])
+            ("t3" function (:arguments ("p3test3.cpp" "ExpBST.o")) nil [405 476])
+            ("t4" function (:arguments ("p3test4.cpp" "ExpBST.o")) nil [476 547])
+            ("t5" function (:arguments ("p3test5.cpp" "ExpBST.o")) nil [547 618])
+            ("t6" function (:arguments ("p3test6.cpp" "ExpBST.o")) nil [618 689])
+            ("t7" function (:arguments ("p3test7.cpp" "ExpBST.o")) nil [689 760])
+            ("t8" function (:arguments ("p3test8.cpp" "ExpBST.o")) nil [760 831])
+            ("t9" function (:arguments ("p3test9.cpp" "ExpBST.o")) nil [831 902])
+            ("ExpBST.o" function (:arguments ("ExpBST.cpp" "ExpBST.h")) nil [903 964])
+            ("upload" function nil nil [1049 1111]))          
+      :file "makefile"
+      :pointmax 1111
+      :fsize 1110
+      :lastmodtime '(23025 4032 347668 33000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [128 147])
+            ("stdexcept" include (:system-flag t) nil [148 168])
+            ("cmath" include (:system-flag t) nil [169 185])
+            ("set" include (:system-flag t) nil [186 200])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [201 222])
+            ("ExpBST.h" include nil nil [224 243])
+            ("depthLimit" variable
+               (:constant-flag t
+                :default-value "50"
+                :type "int")
+                nil [245 272])
+            ("sanityCheck" function
+               (:arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1360 1370])
+                    ("pos" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1371 1382])
+                    ("depth" variable (:type "int") (reparse-symbol arg-sub-list) [1383 1393])
+                    ("key" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1394 1403])
+                    ("height" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1404 1416])
+                    ("size" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1417 1427])
+                    ("report" variable
+                       (:default-value "true"
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1428 1444]))                  
+                :type "bool")
+                nil [1343 4047])
+            ("checkAgainstSTLSet" function
+               (:arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4075 4085])
+                    ("S" variable
+                       (:reference 1
+                        :type ("set" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4086 4098]))                  
+                :type "bool")
+                nil [4050 4532])
+            ("report" function
+               (:arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4547 4563]))                  
+                :type "void")
+                nil [4535 5285])
+            ("main" function (:type "int") nil [5288 7697]))          
+      :file "p3test7.cpp"
+      :pointmax 7698
+      :fsize 7719
+      :lastmodtime '(23030 12703 614579 660000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [240 259])
+            ("cstring" include (:system-flag t) nil [260 278])
+            ("cmath" include (:system-flag t) nil [279 295])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [296 317])
+            ("ExpBST.h" include nil nil [319 338])
+            ("report" function
+               (:arguments 
+                  ( ("T" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ExpBST" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [353 369]))                  
+                :type "void")
+                nil [341 1029])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1041 1050])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1051 1064]))                  
+                :type "int")
+                nil [1032 1516]))          
+      :file "p3test8.cpp"
+      :pointmax 1517
+      :fsize 1516
+      :lastmodtime '(23030 12703 646580 760000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ExpBST.h" include nil nil [31 50])
+            ("iostream" include (:system-flag t) nil [51 70])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [71 91])
+            ("main" function (:type "int") nil [93 674]))          
+      :file "driver.cpp"
+      :pointmax 675
+      :fsize 674
+      :lastmodtime '(23041 4188 496558 399000)
+      :unmatched-syntax '((number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393) (number 398 . 399) (number 395 . 396) (number 392 . 393))))
+  :file "!home!Tristan!Documents!code!cs341!projects!proj3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

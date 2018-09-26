@@ -1,0 +1,372 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.util.Scanner" include nil nil [1 26])
+            ("java.io.FileInputStream" include nil nil [27 58])
+            ("java.io.FileNotFoundException" include nil nil [59 96])
+            ("hw6" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [145 158]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [121 1776]))                  
+                :type "class")
+                nil [98 1778]))          
+      :file "hw6.java"
+      :pointmax 1779
+      :fsize 1778
+      :lastmodtime '(23077 62752 983643 253000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [30 57])
+            ("Boxcar" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("Boxcar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("capacity" variable (:type "int") (reparse-symbol formal_parameters) [108 120]))                          )
+                        (reparse-symbol class_member_declaration) [94 197])
+                    ("getCapacity" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [207 261])
+                    ("print" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [267 468])
+                    ("add" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [506 519]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [478 521])
+                    ("remove" function
+                       (:typemodifiers ("public" "abstract")
+                        :arguments 
+                          ( ("itemID" variable (:type "String") (reparse-symbol formal_parameters) [558 571]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [527 573])
+                    ("isFull" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [583 616])
+                    ("isEmpty" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [626 660])
+                    ("capacity" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [670 693]))                  
+                :type "class")
+                nil [59 737]))          
+      :file "Boxcar.java"
+      :pointmax 738
+      :fsize 737
+      :lastmodtime '(23078 7656 69804 434000)
+      :unmatched-syntax '((SEMICOLON 734 . 735) (GT 724 . 725) (PROTECTED 698 . 707) (LT 717 . 718) (SEMICOLON 734 . 735) (GT 724 . 725) (PROTECTED 698 . 707) (LT 717 . 718) ($EOI 740 . 740) (SEMICOLON 730 . 731) (GT 720 . 721) (PROTECTED 694 . 703) (LT 713 . 714) (SEMICOLON 730 . 731) (GT 720 . 721) (PROTECTED 694 . 703) (LT 713 . 714) (SEMICOLON 721 . 722) (GT 711 . 712) (PROTECTED 685 . 694) (LT 704 . 705) ($EOI 723 . 723) (RBRACE 721 . 722) (SEMICOLON 719 . 720) (GT 709 . 710) (LT 702 . 703) (PROTECTED 683 . 692) (SEMICOLON 677 . 678) (PROTECTED 655 . 664) (SEMICOLON 644 . 645) (PAREN_BLOCK 642 . 644) (ABSTRACT 618 . 626) (PUBLIC 611 . 617) (SEMICOLON 600 . 601) (PAREN_BLOCK 598 . 600) (ABSTRACT 575 . 583) (PUBLIC 568 . 574)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [27 54])
+            ("Cargocar" type
+               (:typemodifiers ("public")
+                :superclasses "Boxcar"
+                :members 
+                  ( ("Cargocar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("capacity" variable (:type "int") (reparse-symbol formal_parameters) [115 127]))                          )
+                        (reparse-symbol class_member_declaration) [99 196])
+                    ("add" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [221 234]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [202 465])
+                    ("remove" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("itemID" variable (:type "String") (reparse-symbol formal_parameters) [493 506]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [471 706])
+                    ("isFull" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [712 784])
+                    ("isEmpty" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [794 858]))                  
+                :type "class")
+                nil [56 860]))          
+      :file "Cargocar.java"
+      :pointmax 861
+      :fsize 860
+      :lastmodtime '(23079 2255 673964 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [25 52])
+            ("Coachcar" type
+               (:typemodifiers ("public")
+                :superclasses "Boxcar"
+                :members 
+                  ( ("Coachcar" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("capacity" variable (:type "int") (reparse-symbol formal_parameters) [113 125]))                          )
+                        (reparse-symbol class_member_declaration) [97 156])
+                    ("isFull" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [162 234])
+                    ("isEmpty" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [244 308])
+                    ("add" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [333 346]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [314 561])
+                    ("remove" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("itemID" variable (:type "String") (reparse-symbol formal_parameters) [589 602]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [567 805]))                  
+                :type "class")
+                nil [54 807]))          
+      :file "Coachcar.java"
+      :pointmax 808
+      :fsize 807
+      :lastmodtime '(23079 2398 482384 988000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("Person" type
+               (:typemodifiers ("public")
+                :superclasses "Object"
+                :members 
+                  ( ("Person" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "String") (reparse-symbol formal_parameters) [72 81])
+                            ("name" variable (:type "String") (reparse-symbol formal_parameters) [83 94])
+                            ("age" variable (:type "int") (reparse-symbol formal_parameters) [96 103]))                          )
+                        (reparse-symbol class_member_declaration) [58 167])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("p" variable (:type "Object") (reparse-symbol formal_parameters) [195 203]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [173 276]))                  
+                :type "class")
+                nil [17 276]))          
+      :file "Person.java"
+      :pointmax 527
+      :fsize 526
+      :lastmodtime '(23078 9017 242100 150000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("Cargo" type
+               (:typemodifiers ("public")
+                :superclasses "Object"
+                :members 
+                  ( ("Cargo" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "String") (reparse-symbol formal_parameters) [69 78])
+                            ("weight" variable (:type "int") (reparse-symbol formal_parameters) [80 90])
+                            ("height" variable (:type "int") (reparse-symbol formal_parameters) [92 102]))                          )
+                        (reparse-symbol class_member_declaration) [56 176])
+                    ("equals" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("c" variable (:type "Object") (reparse-symbol formal_parameters) [204 212]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [182 283])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [293 468])
+                    ("id" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [474 492])
+                    ("weight" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [497 516])
+                    ("height" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [521 540]))                  
+                :type "class")
+                nil [16 542]))          
+      :file "Cargo.java"
+      :pointmax 543
+      :fsize 542
+      :lastmodtime '(23078 10179 407041 609000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.util.ArrayList" include nil nil [30 57])
+            ("Train" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("Train" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("originCity" variable (:type "String") (reparse-symbol formal_parameters) [97 114])
+                            ("min" variable (:type "int") (reparse-symbol formal_parameters) [116 123])
+                            ("max" variable (:type "int") (reparse-symbol formal_parameters) [125 132])
+                            ("carCapacity" variable (:type "int") (reparse-symbol formal_parameters) [134 149]))                          )
+                        (reparse-symbol class_member_declaration) [84 306])
+                    ("print" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [312 1044])
+                    ("arrive" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1050 1258])
+                    ("depart" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("city" variable (:type "String") (reparse-symbol formal_parameters) [1283 1294]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1264 1522])
+                    ("speedup" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("speed" variable (:type "int") (reparse-symbol formal_parameters) [1548 1557]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1528 1864])
+                    ("slowdown" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("speed" variable (:type "int") (reparse-symbol formal_parameters) [1891 1900]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1870 2214])
+                    ("addcar" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("thing" variable (:type "String") (reparse-symbol formal_parameters) [2239 2251])
+                            ("maxCapacity" variable (:type "int") (reparse-symbol formal_parameters) [2253 2268]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2220 2692])
+                    ("remove" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("carID" variable (:type "int") (reparse-symbol formal_parameters) [2717 2726]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2698 3142])
+                    ("load" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [3165 3178]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3148 3623])
+                    ("unload" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("carID" variable (:type "String") (reparse-symbol formal_parameters) [3648 3660])
+                            ("thingID" variable (:type "String") (reparse-symbol formal_parameters) [3662 3676]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3629 3895])
+                    ("containsBoxcarExceptCheck" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("carID" variable (:type "int") (reparse-symbol formal_parameters) [3947 3956]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3905 4136])
+                    ("maxBox" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4182 4201])
+                    ("curSpeed" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4206 4227])
+                    ("maxSpeed" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4232 4253])
+                    ("minSpeed" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [4258 4279])
+                    ("origin" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4284 4306])
+                    ("destination" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4311 4338])
+                    ("stopped" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4343 4367]))                  
+                :type "class")
+                nil [59 4369]))          
+      :file "Train.java"
+      :pointmax 4370
+      :fsize 4369
+      :lastmodtime '(23079 2737 33312 802000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("top" function nil nil [1 34])
+            ("run" function nil nil [34 49])
+            (".PHONY" function (:arguments ("clean")) nil [50 64])
+            ("clean" function nil nil [65 97]))          
+      :file "makefile"
+      :pointmax 98
+      :fsize 97
+      :lastmodtime '(23078 4420 115794 80000)
+      :unmatched-syntax nil))
+  :file "!home!Tristan!Documents!code!cs331!hw6-pathos883!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

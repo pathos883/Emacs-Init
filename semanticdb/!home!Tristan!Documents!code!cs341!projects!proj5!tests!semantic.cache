@@ -1,0 +1,134 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [136 155])
+            ("vector" include (:system-flag t) nil [156 173])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [174 195])
+            ("PerfectHT.h" include nil nil [197 219])
+            ("1Kwords.h" include nil nil [220 240])
+            ("testIn" function
+               (:arguments 
+                  ( ("H2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SecondaryHT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [287 309])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [310 326]))                  
+                :type "void")
+                nil [274 502])
+            ("testOut" function
+               (:arguments 
+                  ( ("H2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SecondaryHT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [553 575])
+                    ("str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [576 592]))                  
+                :type "void")
+                nil [539 776])
+            ("main" function (:type "int") nil [779 1409]))          
+      :file "p5test3.cpp"
+      :pointmax 1410
+      :fsize 1409
+      :lastmodtime '(23079 4248 167916 512000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [136 155])
+            ("vector" include (:system-flag t) nil [156 173])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [174 195])
+            ("PerfectHT.h" include nil nil [197 219])
+            ("1Kwords.h" include nil nil [284 304])
+            ("main" function (:type "int") nil [306 3456])
+            ("HashFunction::m_debug" variable
+               (:default-value "true"
+                :type "int")
+                nil [362 392])
+            ("SecondaryHT::m_debug" variable
+               (:default-value "true"
+                :type "int")
+                nil [427 456])
+            ("notInError" variable (:type "int") nil [461 490])
+            ("notOutError" variable (:type "int") nil [461 490])
+            ("H2ptr" variable
+               (:pointer 1
+                :type ("SecondaryHT" type (:type "class") nil nil))
+                nil [494 514]))          
+      :file "p5test4.cpp"
+      :pointmax 3457
+      :fsize 3458
+      :lastmodtime '(23087 1685 81608 224000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [145 164])
+            ("vector" include (:system-flag t) nil [165 182])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [183 204])
+            ("PerfectHT.h" include nil nil [206 228])
+            ("main" function (:type "int") nil [230 1592]))          
+      :file "p5test6.cpp"
+      :pointmax 1593
+      :fsize 1592
+      :lastmodtime '(23079 4248 227918 378000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [127 146])
+            ("vector" include (:system-flag t) nil [147 164])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [165 186])
+            ("PerfectHT.h" include nil nil [188 210])
+            ("1Kwords.h" include nil nil [260 280])
+            ("main" function (:type "int") nil [283 1241]))          
+      :file "p5test7.cpp"
+      :pointmax 1242
+      :fsize 1241
+      :lastmodtime '(23079 4248 236918 657000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [168 187])
+            ("vector" include (:system-flag t) nil [188 205])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [206 227])
+            ("PerfectHT.h" include nil nil [229 251])
+            ("1Kwords.h" include nil nil [299 319])
+            ("main" function (:type "int") nil [322 1635]))          
+      :file "p5test8.cpp"
+      :pointmax 1636
+      :fsize 1635
+      :lastmodtime '(23087 18384 536018 294000)
+      :unmatched-syntax nil))
+  :file "!home!Tristan!Documents!code!cs341!projects!proj5!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode scheme-mode
+      :tags 
+        '( ("shift-left" variable (:default-value ((22 . 78))) nil [1 78])
+            ("shift-right" variable (:default-value ((104 . 190))) nil [82 190])
+            ("count" variable (:default-value ((210 . 373))) nil [194 373])
+            ("whatMonth?" variable (:default-value ((400 . 1009))) nil [379 1009])
+            ("format" variable (:default-value ((1032 . 1420))) nil [1015 1416])
+            ("formatDate" variable (:default-value ((1447 . 1602))) nil [1422 1598])
+            ("divideAll" variable (:default-value ((1628 . 1758))) nil [1604 1754]))          
+      :file "hw5.scm"
+      :pointmax 1760
+      :fsize 1763
+      :lastmodtime '(23084 42366 520771 777000)
+      :unmatched-syntax nil))
+  :file "!home!Tristan!Documents!code!cs331!homework5-pathos883!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,1019 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BBox.h" include nil nil [343 360])
+            ("Point.h" include nil nil [361 379])
+            ("BBox" function
+               (:constructor-flag t
+                :parent "BBox"
+                :type ("BBox" type (:type "class") nil nil))
+                nil [382 397])
+            ("BBox" function
+               (:constructor-flag t
+                :parent "BBox"
+                :arguments 
+                  ( ("bottomLeft" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [464 488])
+                    ("dim" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [489 506]))                  
+                :type ("BBox" type (:type "class") nil nil))
+                nil [453 550])
+            ("inBounds" function
+               (:methodconst-flag t
+                :parent "BBox"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [692 708]))                  
+                :type "bool")
+                nil [672 850])
+            ("overlaps" function
+               (:methodconst-flag t
+                :parent "BBox"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BBox" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1024 1042]))                  
+                :type "bool")
+                nil [1004 1504])
+            ("findMSBSet" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("pattern" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1585 1606]))                  
+                :type "unsigned int")
+                nil [1554 1832])
+            ("resize" function
+               (:parent "BBox"
+                :arguments 
+                  ( ("pt1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2726 2743])
+                    ("pt2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2744 2761]))                  
+                :type "void")
+                nil [2708 3265])
+            ("grow" function
+               (:parent "BBox"
+                :type "void")
+                nil [3673 3818])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("sout" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3845 3864])
+                    ("bBox" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BBox" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3865 3882]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [3820 3974]))          
+      :file "BBox.cpp"
+      :pointmax 3975
+      :fsize 3974
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("BBOX_H" variable (:constant-flag t) nil [24 30])
+            ("iostream" include (:system-flag t) nil [32 51])
+            ("Point.h" include nil nil [52 70])
+            ("BBox" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [427 434])
+                    ("BBox" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("BBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [439 446])
+                    ("BBox" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("bottomLeft" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [456 480])
+                            ("dim" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [481 498]))                          
+                        :type ("BBox" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [451 499])
+                    ("inBounds" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [519 535]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [505 542])
+                    ("overlaps" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BBox" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [561 579]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [547 586])
+                    ("resize" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [603 620])
+                            ("pt2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [621 638]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [591 639])
+                    ("grow" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [644 656])
+                    ("m_bL" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [662 673])
+                    ("m_dim" variable (:type "unsigned int") (reparse-symbol classsubparts) [724 743])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("sout" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [823 842])
+                            ("bBox" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BBox" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [843 860]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [791 861]))                  
+                :type "class")
+                nil [414 865]))          
+      :file "BBox.h"
+      :pointmax 873
+      :fsize 872
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BBOX_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Point.h" include nil nil [1 19])
+            ("Point" function
+               (:constructor-flag t
+                :parent "Point"
+                :type ("Point" type (:type "class") nil nil))
+                nil [192 209])
+            ("Point" function
+               (:constructor-flag t
+                :parent "Point"
+                :arguments 
+                  ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [278 293])
+                    ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [294 309]))                  
+                :type ("Point" type (:type "class") nil nil))
+                nil [265 339])
+            ("==" function
+               (:methodconst-flag t
+                :operator-flag t
+                :parent "Point"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [410 429]))                  
+                :type "bool")
+                nil [386 490])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("sout" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [517 536])
+                    ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [537 553]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [492 626]))          
+      :file "Point.cpp"
+      :pointmax 626
+      :fsize 625
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("POINT_H" variable (:constant-flag t) nil [25 32])
+            ("iostream" include (:system-flag t) nil [34 53])
+            ("Point" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [241 248])
+                    ("Point" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [253 261])
+                    ("Point" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("x" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [272 287])
+                            ("y" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [288 303]))                          
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [266 304])
+                    ("==" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :operator-flag t
+                        :arguments 
+                          ( ("other" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [326 345]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [309 352])
+                    ("m_x" variable (:type "unsigned int") (reparse-symbol classsubparts) [358 375])
+                    ("m_y" variable (:type "unsigned int") (reparse-symbol classsubparts) [380 397])
+                    ("<<" function
+                       (:prototype-flag t
+                        :operator-flag t
+                        :typemodifiers ("friend")
+                        :arguments 
+                          ( ("sout" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [435 454])
+                            ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [455 471]))                          
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [403 472]))                  
+                :type "class")
+                nil [227 475]))          
+      :file "Point.h"
+      :pointmax 488
+      :fsize 487
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("POINT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("QTNode.h" include nil nil [1 20])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [21 41])
+            ("iterator" function
+               (:parent "QTNode::iterator"
+                :type "int")
+                nil [43 74])
+            ("==" function
+               (:operator-flag t
+                :parent "QTNode::iterator"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QTNode::iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [110 140]))                  
+                :type "bool")
+                nil [76 178])
+            ("!=" function
+               (:operator-flag t
+                :parent "QTNode::iterator"
+                :arguments 
+                  ( ("other" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("QTNode::iterator" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [219 249]))                  
+                :type "bool")
+                nil [184 287])
+            ("++" function
+               (:operator-flag t
+                :parent "QTNode::iterator"
+                :type ("QTNode::iterator" type (:type "class") nil nil))
+                nil [289 392])
+            ("++" function
+               (:operator-flag t
+                :parent "QTNode::iterator"
+                :arguments 
+                  ( ("dummy" variable (:type "int") (reparse-symbol arg-sub-list) [450 460]))                  
+                :type ("QTNode::iterator" type (:type "class") nil nil))
+                nil [404 548])
+            ("" function
+               (:operator-flag t
+                :function-pointer t
+                :parent "QTNode::iterator"
+                :type "int")
+                nil [560 612])
+            ("QTNode" function
+               (:constructor-flag t
+                :parent "QTNode"
+                :type ("QTNode" type (:type "class") nil nil))
+                nil [635 685])
+            ("QTNode" function
+               (:destructor-flag t
+                :parent "QTNode"
+                :type "void")
+                nil [700 751])
+            ("getQuad" function
+               (:arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [765 781])
+                    ("b" variable (:type ("BBox" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [782 789]))                  
+                :type "int")
+                nil [753 1009])
+            ("add" function
+               (:parent "QTNode"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1028 1044])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [1045 1054]))                  
+                :type "bool")
+                nil [1011 1199])
+            ("remove" function
+               (:parent "QTNode"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1221 1237])
+                    ("empty" variable
+                       (:reference 1
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [1238 1250]))                  
+                :type "bool")
+                nil [1201 1257])
+            ("find" function
+               (:parent "QTNode"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1277 1293])
+                    ("data" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1294 1304]))                  
+                :type "bool")
+                nil [1259 1407])
+            ("findPoints" function
+               (:parent "QTNode"
+                :arguments 
+                  ( ("region" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BBox" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1432 1451])
+                    ("found" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1452 1478]))                  
+                :type "int")
+                nil [1409 1487])
+            ("dump" function
+               (:parent "QTNode"
+                :type "void")
+                nil [1489 1515]))          
+      :file "QTNode.cpp"
+      :pointmax 1516
+      :fsize 1515
+      :lastmodtime '(23242 54685 969820 347000)
+      :unmatched-syntax '((punctuation 559 . 560) (punctuation 557 . 558) (symbol 550 . 556) (punctuation 559 . 560) (punctuation 557 . 558) (symbol 550 . 556) (punctuation 559 . 560) (punctuation 557 . 558) (symbol 550 . 556) (punctuation 559 . 560) (punctuation 557 . 558) (symbol 550 . 556) (punctuation 559 . 560) (punctuation 557 . 558) (symbol 550 . 556)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("QTNODE_H" variable (:constant-flag t) nil [26 34])
+            ("vector" include (:system-flag t) nil [36 53])
+            ("Point.h" include nil nil [54 72])
+            ("BBox.h" include nil nil [73 90])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [91 111])
+            ("QT_NUM_KIDS" variable (:constant-flag t) nil [121 132])
+            ("QTNode" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [151 158])
+                    ("iterator" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [184 191])
+                            ("iterator" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [193 204])
+                            ("==" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QTNode::iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [222 252]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [206 253])
+                            ("!=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QTNode::iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [271 301]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [255 302])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [304 327])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("dummy" variable (:type "int") (reparse-symbol arg-sub-list) [381 391]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [361 392])
+                            ("" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :type "int")
+                                (reparse-symbol classsubparts) [423 435])
+                            ("private" label nil (reparse-symbol classsubparts) [442 450])
+                            ("current" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [540 557]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [163 579])
+                    ("QTNode" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("QTNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [585 594])
+                    ("QTNode" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [599 609])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [623 639])
+                            ("data" variable (:type "int") (reparse-symbol arg-sub-list) [640 649]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [614 650])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [693 709])
+                            ("empty" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [710 722]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [681 723])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [738 754])
+                            ("data" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [755 765]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [728 766])
+                    ("findPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("region" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BBox" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [786 805])
+                            ("found" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Point" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [806 832]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [771 833])
+                    ("dump" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [838 850])
+                    ("begin" function
+                       (:prototype-flag t
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [856 873])
+                    ("end" function
+                       (:prototype-flag t
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [878 893])
+                    ("m_bounds" variable (:type ("BBox" type (:type "class") nil nil)) (reparse-symbol classsubparts) [899 913])
+                    ("m_point" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [953 967])
+                    ("m_data" variable (:type "int") (reparse-symbol classsubparts) [1031 1042])
+                    ("m_quadrant" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("BBox" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1172 1197])
+                    ("m_children" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("QTNode" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1202 1230]))                  
+                :type "class")
+                nil [136 1346]))          
+      :file "QTNode.h"
+      :pointmax 1354
+      :fsize 1353
+      :lastmodtime '(23242 54694 88074 486000)
+      :unmatched-syntax '((punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420) (punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420) (punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420) (punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420) (punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420) (punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420) (punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420) (punctuation 539 . 540) (punctuation 538 . 539) (punctuation 537 . 538) (punctuation 536 . 537) (symbol 530 . 536) (punctuation 529 . 530) (symbol 523 . 529) (punctuation 422 . 423) (punctuation 421 . 422) (symbol 414 . 420))
+      :lexical-table 
+        '(("QT_NUM_KIDS" . ((number "4" 133 . 134)))
+          ("QTNODE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("QTree.h" include nil nil [2 20])
+            ("QTree" function
+               (:constructor-flag t
+                :parent "QTree"
+                :type ("QTree" type (:type "class") nil nil))
+                nil [26 43])
+            ("QTree" function
+               (:destructor-flag t
+                :parent "QTree"
+                :type "void")
+                nil [48 66])
+            ("add" function
+               (:parent "QTree"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [87 103])
+                    ("data" variable (:type "int") (reparse-symbol arg-sub-list) [104 113]))                  
+                :type "bool")
+                nil [71 233])
+            ("remove" function
+               (:parent "QTree"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [257 273]))                  
+                :type "bool")
+                nil [238 300])
+            ("find" function
+               (:parent "QTree"
+                :arguments 
+                  ( ("pt" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [322 338])
+                    ("data" variable
+                       (:reference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [339 349]))                  
+                :type "bool")
+                nil [305 374])
+            ("findPoints" function
+               (:parent "QTree"
+                :arguments 
+                  ( ("region" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("BBox" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [401 420])
+                    ("found" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("Point" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [421 447]))                  
+                :type "int")
+                nil [379 472])
+            ("dump" function
+               (:parent "QTree"
+                :type "void")
+                nil [477 507]))          
+      :file "QTree.cpp"
+      :pointmax 508
+      :fsize 507
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("QTREE_H" variable (:constant-flag t) nil [25 32])
+            ("vector" include (:system-flag t) nil [34 51])
+            ("Point.h" include nil nil [52 70])
+            ("BBox.h" include nil nil [71 88])
+            ("QTNode.h" include nil nil [89 108])
+            ("QTree" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [124 131])
+                    ("QTree" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("QTree" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [136 144])
+                    ("QTree" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [149 158])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [172 188])
+                            ("data" variable (:type "int") (reparse-symbol arg-sub-list) [189 198]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [163 199])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [242 258]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [230 259])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [274 290])
+                            ("data" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [291 301]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [264 302])
+                    ("findPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("region" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BBox" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [322 341])
+                            ("found" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Point" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [342 368]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [307 369])
+                    ("dump" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [374 386])
+                    ("m_root" variable
+                       (:pointer 1
+                        :type ("QTNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [392 407])
+                    ("private" label nil (reparse-symbol classsubparts) [409 417]))                  
+                :type "class")
+                nil [110 422]))          
+      :file "QTree.h"
+      :pointmax 430
+      :fsize 429
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("QTREE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("utility" include (:system-flag t) nil [1 19])
+            ("cstdlib" include (:system-flag t) nil [20 38])
+            ("cstdio" include (:system-flag t) nil [39 56])
+            ("Point.h" include nil nil [57 75])
+            ("BBox.h" include nil nil [76 93])
+            ("QTNode.h" include nil nil [94 113])
+            ("QTree.h" include nil nil [114 132])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [134 154])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [165 174])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [175 187]))                  
+                :type "int")
+                nil [156 2045]))          
+      :file "p3test02.cpp"
+      :pointmax 2046
+      :fsize 2045
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("utility" include (:system-flag t) nil [1 19])
+            ("cstdlib" include (:system-flag t) nil [20 38])
+            ("cstdio" include (:system-flag t) nil [39 56])
+            ("Point.h" include nil nil [57 75])
+            ("BBox.h" include nil nil [76 93])
+            ("QTNode.h" include nil nil [94 113])
+            ("QTree.h" include nil nil [114 132])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [134 154])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [165 174])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [175 187]))                  
+                :type "int")
+                nil [156 560]))          
+      :file "test1.cpp"
+      :pointmax 560
+      :fsize 559
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [1 11])
+            ("CXXFLAGS" variable (:default-value ("-Wall" "-g")) nil [11 31])
+            ("test" function (:arguments ("test1.cpp" "BBox.o" "Point.o" "QTNode.o" "QTree.o")) nil [32 159])
+            ("BBox.o" function (:arguments ("BBox.cpp" "BBox.h" "Point.o" "QTNode.o" "QTree.o")) nil [160 242])
+            ("Point.o" function (:arguments ("Point.cpp" "Point.h" "QTNode.o" "QTree.o")) nil [243 320])
+            ("QTNode.o" function (:arguments ("QTNode.cpp" "QTNode.h" "QTree.o")) nil [321 394])
+            ("QTree.o" function (:arguments ("QTree.cpp" "QTree.h")) nil [395 455])
+            ("clean" function nil nil [456 479]))          
+      :file "makefile"
+      :pointmax 479
+      :fsize 478
+      :lastmodtime '(23242 51195 178604 693000)
+      :unmatched-syntax '((shell-command 472 . 478) (bol 471 . 471)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("QTNODE_H" variable (:constant-flag t) nil [26 34])
+            ("vector" include (:system-flag t) nil [36 53])
+            ("Point.h" include nil nil [54 72])
+            ("BBox.h" include nil nil [73 90])
+            ("QT_NUM_KIDS" variable (:constant-flag t) nil [100 111])
+            ("QTNode" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [130 137])
+                    ("iterator" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [163 170])
+                            ("iterator" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [172 183])
+                            ("==" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QTNode::iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [201 231]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [185 232])
+                            ("!=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("QTNode::iterator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [250 280]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [234 281])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [283 306])
+                            ("++" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("dummy" variable (:type "int") (reparse-symbol arg-sub-list) [360 370]))                                  
+                                :type ("iterator" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [340 371])
+                            ("" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :function-pointer t
+                                :type "int")
+                                (reparse-symbol classsubparts) [402 414])
+                            ("private" label nil (reparse-symbol classsubparts) [421 429])
+                            ("current" variable (:type ("iterator" type (:type "class") nil nil)) (reparse-symbol classsubparts) [519 536]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [142 558])
+                    ("QTNode" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :type ("QTNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [564 573])
+                    ("QTNode" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [578 588])
+                    ("add" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [602 618])
+                            ("data" variable (:type "int") (reparse-symbol arg-sub-list) [619 628]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [593 629])
+                    ("remove" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [672 688])
+                            ("empty" variable
+                               (:reference 1
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [689 701]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [660 702])
+                    ("find" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("pt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Point" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [717 733])
+                            ("data" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [734 744]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [707 745])
+                    ("findPoints" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("region" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("BBox" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [765 784])
+                            ("found" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Point" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [785 811]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [750 812])
+                    ("dump" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [817 829])
+                    ("begin" function
+                       (:prototype-flag t
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [835 852])
+                    ("end" function
+                       (:prototype-flag t
+                        :type ("iterator" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [857 872])
+                    ("m_bounds" variable (:type ("BBox" type (:type "class") nil nil)) (reparse-symbol classsubparts) [878 892])
+                    ("m_point" variable (:type ("Point" type (:type "class") nil nil)) (reparse-symbol classsubparts) [932 946])
+                    ("m_data" variable (:type "int") (reparse-symbol classsubparts) [1010 1021])
+                    ("m_quadrant" variable (:type ("vector" type
+                         (:template-specifier 
+                            ( ("BBox" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1151 1176])
+                    ("m_children" variable (:type ("vector" type
+                         (:template-specifier (("QTNode"))
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1181 1209]))                  
+                :type "class")
+                nil [115 1325]))          
+      :file "QTNode.h~"
+      :pointmax 1333
+      :fsize 1332
+      :lastmodtime '(23242 48505 796419 402000)
+      :unmatched-syntax '((punctuation 518 . 519) (punctuation 517 . 518) (punctuation 516 . 517) (symbol 510 . 516) (punctuation 509 . 510) (punctuation 508 . 509) (symbol 502 . 508) (punctuation 401 . 402) (punctuation 400 . 401) (symbol 393 . 399) (punctuation 518 . 519) (punctuation 517 . 518) (punctuation 516 . 517) (symbol 510 . 516) (punctuation 509 . 510) (punctuation 508 . 509) (symbol 502 . 508) (punctuation 401 . 402) (punctuation 400 . 401) (symbol 393 . 399))
+      :lexical-table 
+        '(("QT_NUM_KIDS" . ((number "4" 112 . 113)))
+          ("QTNODE_H")
+          )
+))
+  :file "!home!Tristan!Documents!AllenProj3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

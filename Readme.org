@@ -1,0 +1,10 @@
+#+STARTUP: showall hidestars
+
+* Chapter 1
+** Pg1
+   Intro
+   - more intro
+* Chapter 2
+** pg2
+   Body
+   - more body

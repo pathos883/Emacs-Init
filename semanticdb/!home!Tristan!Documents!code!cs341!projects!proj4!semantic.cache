@@ -1,0 +1,1501 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HEAP_H" variable (:constant-flag t) nil [363 369])
+            ("cstddef" include (:system-flag t) nil [370 388])
+            ("iostream" include (:system-flag t) nil [406 425])
+            ("Heap" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [463 470])
+                    ("Heap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [595 604])
+                            ("compare" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [621 630])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [631 640]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type ("Heap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [590 927])
+                    ("Heap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [970 1025])
+                    ("remove" function
+                       (:arguments 
+                          ( ("givenItem" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1177 1190])
+                            ("equalTo" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1072 1081])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1082 1091]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1165 1533])
+                    ("get" function
+                       (:arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [1546 1554]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1539 1669])
+                    ("ReheapDown" function
+                       (:arguments 
+                          ( ("root" variable (:type "int") (reparse-symbol arg-sub-list) [1738 1747])
+                            ("bottom" variable (:type "int") (reparse-symbol arg-sub-list) [1748 1759]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1722 2881])
+                    ("ReheapUp" function
+                       (:arguments 
+                          ( ("root" variable (:type "int") (reparse-symbol arg-sub-list) [2901 2910])
+                            ("bottom" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2911 2923]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2887 3482])
+                    ("Enqueue" function
+                       (:arguments 
+                          ( ("item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3593 3607]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3580 3907])
+                    ("Dequeue" function
+                       (:arguments 
+                          ( ("topElement" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4020 4034]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4007 4337])
+                    ("getNumElements" function (:type "int") (reparse-symbol classsubparts) [4387 4441])
+                    ("getCapacity" function (:type "int") (reparse-symbol classsubparts) [4445 4495])
+                    ("printAll" function (:type "void") (reparse-symbol classsubparts) [4551 4712])
+                    ("private" label nil (reparse-symbol classsubparts) [4717 4725])
+                    ("m_data" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4728 4739])
+                    ("m_numElements" variable (:type "int") (reparse-symbol classsubparts) [4773 4791])
+                    ("m_capacity" variable (:type "int") (reparse-symbol classsubparts) [4825 4840])
+                    ("m_compare" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4886 4895])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4896 4905]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4868 4906]))                  )
+                nil [427 4942]))          
+      :file "Heap.h"
+      :pointmax 4951
+      :fsize 4950
+      :lastmodtime '(23069 55528 194752 728000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HEAP_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [1 11])
+            ("CXXFLAGS" variable (:default-value ("-std=c++98" "-g")) nil [11 36])
+            ("DEPS" variable (:default-value ("Heap.h" "MedianHeap.h")) nil [36 63])
+            ("DEPS2" variable (:default-value ("Heap.h" "MedianHeap.h" "City.o")) nil [63 98])
+            ("all" function nil nil [114 187])
+            ("make" function nil nil [114 187])
+            ("t1" function (:arguments ("p4test1.cpp" "$(DEPS)")) nil [188 260])
+            ("t2" function (:arguments ("p4test2.cpp" "$(DEPS)")) nil [261 333])
+            ("t3" function (:arguments ("p4test3.cpp" "$(DEPS2)")) nil [334 408])
+            ("t4" function (:arguments ("p4test4.cpp" "$(DEPS2)")) nil [409 483])
+            ("t5" function (:arguments ("p4test5.cpp" "$(DEPS2)")) nil [484 558])
+            ("t6" function (:arguments ("p4test6.cpp" "$(DEPS2)")) nil [559 633])
+            ("t7" function (:arguments ("p4test7.cpp" "$(DEPS)")) nil [634 706])
+            ("City.o" function (:arguments ("City.h" "City.cpp")) nil [707 763])
+            ("medianheaptest" function (:arguments ("mhtest.cpp" "$(DEPS)")) nil [764 848])
+            ("heapTest" function (:arguments ("htest.cpp" "Heap.h")) nil [849 917])
+            (".PHONY" function (:arguments ("upload")) nil [1003 1018])
+            ("upload" function nil nil [1019 1087]))          
+      :file "makefile"
+      :pointmax 1087
+      :fsize 1086
+      :lastmodtime '(23069 55652 120552 254000)
+      :unmatched-syntax '((shell-command 1028 . 1086) (bol 1027 . 1027) (shell-command 1028 . 1086) (bol 1027 . 1027)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("Heap.h" include nil nil [602 619])
+            ("iostream" include (:system-flag t) nil [620 639])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [641 661])
+            ("lt" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [671 684])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [685 698]))                  
+                :type "bool")
+                nil [663 719])
+            ("gt" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [730 743])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [744 757]))                  
+                :type "bool")
+                nil [722 778])
+            ("main" function (:type "int") nil [780 1703]))          
+      :file "htest.cpp"
+      :pointmax 1704
+      :fsize 1703
+      :lastmodtime '(23069 47695 338140 448000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MEDIANHEAP_H" variable (:constant-flag t) nil [30 42])
+            ("Heap.h" include nil nil [43 60])
+            ("MedianHeap" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [104 111])
+                    ("MedianHeap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("lt" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [235 244])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [245 254]))                                  
+                                :type "bool")
+                                nil nil)
+                            ("gt" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [268 277])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [278 287]))                                  
+                                :type "bool")
+                                nil nil)
+                            ("cap" variable
+                               (:default-value "100"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [289 300]))                          
+                        :type ("MedianHeap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [211 501])
+                    ("MedianHeap" function
+                       (:arguments 
+                          ( ("otherH" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MedianHeap" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [518 546]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [507 1211])
+                    ("MedianHeap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1217 1326])
+                    ("=" function
+                       (:operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MedianHeap" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1363 1388]))                          
+                        :type ("MedianHeap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1332 1414])
+                    ("size" function (:type "int") (reparse-symbol classsubparts) [1420 1508])
+                    ("capacity" function (:type "int") (reparse-symbol classsubparts) [1514 1559])
+                    ("deleteItem" function
+                       (:arguments 
+                          ( ("givenItem" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1579 1592])
+                            ("equalTo" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1583 1592])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1593 1602]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1563 3179])
+                    ("insert" function
+                       (:arguments 
+                          ( ("item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3197 3211]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3185 4555])
+                    ("getMedian" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4561 4683])
+                    ("getMin" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4689 4809])
+                    ("getMax" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4815 4935])
+                    ("dump" function (:type "void") (reparse-symbol classsubparts) [4941 5752])
+                    ("maxHeapSize" function (:type "int") (reparse-symbol classsubparts) [5756 5821])
+                    ("minHeapSize" function (:type "int") (reparse-symbol classsubparts) [5824 5889])
+                    ("locateInMaxHeap" function
+                       (:arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [5913 5921]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5895 6062])
+                    ("locateInMinHeap" function
+                       (:arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [6083 6091]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [6065 6232])
+                    ("private" label nil (reparse-symbol classsubparts) [6235 6243])
+                    ("m_minHeap" variable
+                       (:pointer 1
+                        :type ("Heap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6246 6265])
+                    ("m_maxHeap" variable
+                       (:pointer 1
+                        :type ("Heap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [6268 6287])
+                    ("m_gt" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6306 6315])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6316 6325]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6293 6326])
+                    ("m_lt" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6367 6376])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6377 6386]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [6354 6387])
+                    ("m_minimum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6415 6427])
+                    ("m_maximum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6430 6442])
+                    ("m_median" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6445 6456])
+                    ("m_capacity" variable (:type "int") (reparse-symbol classsubparts) [6459 6474]))                  )
+                nil [62 6477]))          
+      :file "MedianHeap.h"
+      :pointmax 6489
+      :fsize 6488
+      :lastmodtime '(23070 3667 10829 502000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MEDIANHEAP_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [112 131])
+            ("iomanip" include (:system-flag t) nil [132 150])
+            ("string" include (:system-flag t) nil [151 168])
+            ("sstream" include (:system-flag t) nil [169 187])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [189 210])
+            ("City.h" include nil nil [212 229])
+            ("sameCity" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [299 314])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [315 330]))                  
+                :type "bool")
+                nil [279 401])
+            ("smallerLatitude" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [430 445])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [446 461]))                  
+                :type "bool")
+                nil [403 507])
+            ("biggerLatitude" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [535 550])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [551 566]))                  
+                :type "bool")
+                nil [509 612])
+            ("smallerLongitude" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [642 657])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [658 673]))                  
+                :type "bool")
+                nil [614 721])
+            ("biggerLongitude" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [750 765])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [766 781]))                  
+                :type "bool")
+                nil [723 829])
+            ("smallerPopulation" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [860 875])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [876 891]))                  
+                :type "bool")
+                nil [831 941])
+            ("biggerPopulation" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [971 986])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [987 1002]))                  
+                :type "bool")
+                nil [943 1052])
+            ("smallerElevation" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1082 1097])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1098 1113]))                  
+                :type "bool")
+                nil [1054 1161])
+            ("biggerElevation" function
+               (:parent "City"
+                :arguments 
+                  ( ("c1" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1190 1205])
+                    ("c2" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1206 1221]))                  
+                :type "bool")
+                nil [1163 1269])
+            ("sameCityP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1342 1355])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1355 1360])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1361 1374])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1374 1379]))                  
+                :type "bool")
+                nil [1321 1462])
+            ("smallerLatitudeP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1492 1505])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1505 1510])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1511 1524])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1524 1529]))                  
+                :type "bool")
+                nil [1464 1581])
+            ("biggerLatitudeP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1610 1623])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1623 1628])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1629 1642])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1642 1647]))                  
+                :type "bool")
+                nil [1583 1699])
+            ("smallerLongitudeP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1730 1743])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1743 1748])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1749 1762])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1762 1767]))                  
+                :type "bool")
+                nil [1701 1821])
+            ("biggerLongitudeP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1851 1864])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1864 1869])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1870 1883])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1883 1888]))                  
+                :type "bool")
+                nil [1823 1942])
+            ("smallerPopulationP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1974 1987])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1987 1992])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1993 2006])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2006 2011]))                  
+                :type "bool")
+                nil [1944 2067])
+            ("biggerPopulationP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2098 2111])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2111 2116])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2117 2130])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2130 2135]))                  
+                :type "bool")
+                nil [2069 2191])
+            ("smallerElevationP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2222 2235])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2235 2240])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2241 2254])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2254 2259]))                  
+                :type "bool")
+                nil [2193 2313])
+            ("biggerElevationP" function
+               (:parent "City"
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2343 2356])
+                    ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2356 2361])
+                    ("" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2362 2375])
+                    ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2375 2380]))                  
+                :type "bool")
+                nil [2315 2434])
+            (">>" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2457 2469])
+                    ("c" variable
+                       (:reference 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2470 2478]))                  
+                :type ("istream" type (:type "class") nil nil))
+                nil [2437 2633])
+            (">>" function
+               (:operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2656 2668])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2669 2677]))                  
+                :type ("istream" type (:type "class") nil nil))
+                nil [2636 2702])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2725 2737])
+                    ("c" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2738 2752]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [2705 3130])
+            ("<<" function
+               (:operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3153 3165])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3166 3174]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [3133 3199]))          
+      :file "City.cpp"
+      :pointmax 3200
+      :fsize 3199
+      :lastmodtime '(23064 35571 894996 170000)
+      :unmatched-syntax '((punctuation 2374 . 2375) (punctuation 2355 . 2356) (punctuation 2253 . 2254) (punctuation 2234 . 2235) (punctuation 2129 . 2130) (punctuation 2110 . 2111) (punctuation 2005 . 2006) (punctuation 1986 . 1987) (punctuation 1882 . 1883) (punctuation 1863 . 1864) (punctuation 1761 . 1762) (punctuation 1742 . 1743) (punctuation 1641 . 1642) (punctuation 1622 . 1623) (punctuation 1523 . 1524) (punctuation 1504 . 1505) (punctuation 1373 . 1374) (punctuation 1354 . 1355)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_CITY_H_" variable (:constant-flag t) nil [130 138])
+            ("string" include (:system-flag t) nil [140 157])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [159 180])
+            ("City" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [198 205])
+                    ("m_name" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [212 227])
+                    ("m_state" variable (:type ("string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [234 250])
+                    ("m_latitude" variable (:type "float") (reparse-symbol classsubparts) [257 275])
+                    ("m_longitude" variable (:type "float") (reparse-symbol classsubparts) [282 301])
+                    ("m_population" variable (:type "int") (reparse-symbol classsubparts) [308 326])
+                    ("m_elevation" variable (:type "int") (reparse-symbol classsubparts) [333 350])
+                    ("sameCity" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [444 459])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [460 475]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [423 477])
+                    ("smallerLatitude" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [512 527])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [528 543]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [484 545])
+                    ("biggerLatitude" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [579 594])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [595 610]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [552 612])
+                    ("smallerLongitude" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [648 663])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [664 679]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [619 681])
+                    ("biggerLongitude" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [716 731])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [732 747]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [688 749])
+                    ("smallerPopulation" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [786 801])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [802 817]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [756 819])
+                    ("biggerPopulation" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [855 870])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [871 886]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [826 888])
+                    ("smallerElevation" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [924 939])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [940 955]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [895 957])
+                    ("biggerElevation" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("c1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [992 1007])
+                            ("c2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1008 1023]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [964 1025])
+                    ("sameCityP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1121 1134])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1134 1139])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1140 1153])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1153 1158]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1099 1160])
+                    ("smallerLatitudeP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1196 1209])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1209 1214])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1215 1228])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1228 1233]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1167 1235])
+                    ("biggerLatitudeP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1270 1283])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1283 1288])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1289 1302])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1302 1307]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1242 1309])
+                    ("smallerLongitudeP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1346 1359])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1359 1364])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1365 1378])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1378 1383]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1316 1385])
+                    ("biggerLongitudeP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1421 1434])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1434 1439])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1440 1453])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1453 1458]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1392 1460])
+                    ("smallerPopulationP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1498 1511])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1511 1516])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1517 1530])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1530 1535]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1467 1537])
+                    ("biggerPopulationP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1574 1587])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1587 1592])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1593 1606])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1606 1611]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1544 1613])
+                    ("smallerElevationP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1650 1663])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1663 1668])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1669 1682])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1682 1687]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1620 1689])
+                    ("biggerElevationP" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1725 1738])
+                            ("" variable (:type ("ptr1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1738 1743])
+                            ("" variable
+                               (:pointer 1
+                                :type ("City" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1744 1757])
+                            ("" variable (:type ("ptr2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1757 1762]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1696 1764]))                  
+                :type "class")
+                nil [182 1769])
+            (">>" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1836 1848])
+                    ("c" variable
+                       (:reference 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1849 1857]))                  
+                :type ("istream" type (:type "class") nil nil))
+                nil [1816 1859])
+            (">>" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("is" variable
+                       (:reference 1
+                        :type ("istream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1880 1892])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1893 1901]))                  
+                :type ("istream" type (:type "class") nil nil))
+                nil [1860 1903])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1925 1937])
+                    ("c" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1938 1952]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [1905 1954])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1975 1987])
+                    ("c" variable
+                       (:pointer 1
+                        :type ("City" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1988 1996]))                  
+                :type ("ostream" type (:type "class") nil nil))
+                nil [1955 1998]))          
+      :file "City.h"
+      :pointmax 2007
+      :fsize 2006
+      :lastmodtime '(23064 35572 273007 544000)
+      :unmatched-syntax '((punctuation 1756 . 1757) (punctuation 1737 . 1738) (punctuation 1681 . 1682) (punctuation 1662 . 1663) (punctuation 1605 . 1606) (punctuation 1586 . 1587) (punctuation 1529 . 1530) (punctuation 1510 . 1511) (punctuation 1452 . 1453) (punctuation 1433 . 1434) (punctuation 1377 . 1378) (punctuation 1358 . 1359) (punctuation 1301 . 1302) (punctuation 1282 . 1283) (punctuation 1227 . 1228) (punctuation 1208 . 1209) (punctuation 1152 . 1153) (punctuation 1133 . 1134))
+      :lexical-table 
+        '(("_CITY_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [107 126])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [127 148])
+            ("MedianHeap.h" include nil nil [150 173])
+            ("lt" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [183 196])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [197 210]))                  
+                :type "bool")
+                nil [175 231])
+            ("gt" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [242 255])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [256 269]))                  
+                :type "bool")
+                nil [234 290])
+            ("main" function (:type "int") nil [293 1183]))          
+      :file "p4test1.cpp"
+      :pointmax 1185
+      :fsize 1184
+      :lastmodtime '(23070 3563 83002 94000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [107 126])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [127 148])
+            ("MedianHeap.h" include nil nil [150 173])
+            ("lt" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [183 196])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [197 210]))                  
+                :type "bool")
+                nil [175 231])
+            ("gt" function
+               (:arguments 
+                  ( ("x" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [242 255])
+                    ("y" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [256 269]))                  
+                :type "bool")
+                nil [234 290])
+            ("main" function (:type "int") nil [293 1247]))          
+      :file "mhtest.cpp"
+      :pointmax 1249
+      :fsize 1248
+      :lastmodtime '(23068 41843 621397 288000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [206 225])
+            ("cstdlib" include (:system-flag t) nil [226 244])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [245 266])
+            ("MedianHeap.h" include nil nil [268 291])
+            ("City.h" include nil nil [292 309])
+            ("sanityCheck" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("H" variable
+                       (:reference 1
+                        :type ("MedianHeap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [351 368])
+                    ("lt" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [381 390])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [391 400]))                          
+                        :type "bool")
+                        nil nil)
+                    ("gt" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [414 423])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [424 433]))                          
+                        :type "bool")
+                        nil nil))                  )
+                nil [312 3408])
+            ("main" function (:type "int") nil [3411 5274]))          
+      :file "p4test5.cpp"
+      :pointmax 5275
+      :fsize 5274
+      :lastmodtime '(23069 45144 411030 975000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [206 225])
+            ("cstdlib" include (:system-flag t) nil [226 244])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [245 266])
+            ("MedianHeap.h" include nil nil [268 291])
+            ("City.h" include nil nil [292 309])
+            ("sanityCheck" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("H" variable
+                       (:reference 1
+                        :type ("MedianHeap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [351 368])
+                    ("lt" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [381 390])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [391 400]))                          
+                        :type "bool")
+                        nil nil)
+                    ("gt" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [414 423])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [424 433]))                          
+                        :type "bool")
+                        nil nil))                  )
+                nil [312 3408])
+            ("main" function (:type "int") nil [3411 5334]))          
+      :file "Sanity.cpp"
+      :pointmax 5335
+      :fsize 5334
+      :lastmodtime '(23069 50696 996056 344000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [118 137])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [138 159])
+            ("MedianHeap.h" include nil nil [161 184])
+            ("City.h" include nil nil [186 203])
+            ("numItems" variable
+               (:default-value "10"
+                :type "int")
+                nil [232 251])
+            ("cities" variable
+               (:dereference 1
+                :default-value "{  {\"Akutan\", \"AK\", 54.13556, -165.77306, 1027, 51},
+   {\"Anchor_Point\", \"AK\", 59.77667, -151.83139, 1930, 39},
+   {\"Anchorage\", \"AK\", 61.21806, -149.90028, 291826, 31},
+   {\"Badger\", \"AK\", 64.8, -147.53333, 19482, 144},
+   {\"Barrow\", \"AK\", 71.29058, -156.78872, 4212, 3},
+   {\"Bear_Creek\", \"AK\", 60.16417, -149.395, 1956, 33},
+   {\"Bethel\", \"AK\", 60.79222, -161.75583, 6080, 1},
+   {\"Big_Lake\", \"AK\", 61.52139, -149.95444, 3350, 44},
+   {\"Butte\", \"AK\", 61.54222, -149.03333, 3246, 28},
+   {\"Cohoe\", \"AK\", 60.36861, -151.30639, 1364, 17}
+}"
+                :type ("City" type (:type "class") nil nil))
+                nil [253 813])
+            ("main" function (:type "int") nil [815 2335]))          
+      :file "p4test4.cpp"
+      :pointmax 2336
+      :fsize 2335
+      :lastmodtime '(23064 35572 695020 241000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [191 210])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [211 232])
+            ("MedianHeap.h" include nil nil [234 257])
+            ("City.h" include nil nil [258 275])
+            ("numItems1" variable
+               (:default-value "10"
+                :type "int")
+                nil [278 298])
+            ("cities1" variable
+               (:dereference 1
+                :default-value "{  {\"Akutan\", \"AK\", 54.13556, -165.77306, 1027, 51},
+   {\"Anchor_Point\", \"AK\", 59.77667, -151.83139, 1930, 39},
+   {\"Anchorage\", \"AK\", 61.21806, -149.90028, 291826, 31},
+   {\"Badger\", \"AK\", 64.8, -147.53333, 19482, 144},
+   {\"Barrow\", \"AK\", 71.29058, -156.78872, 4212, 3},
+   {\"Bear_Creek\", \"AK\", 60.16417, -149.395, 1956, 33},
+   {\"Bethel\", \"AK\", 60.79222, -161.75583, 6080, 1},
+   {\"Big_Lake\", \"AK\", 61.52139, -149.95444, 3350, 44},
+   {\"Butte\", \"AK\", 61.54222, -149.03333, 3246, 28},
+   {\"Cohoe\", \"AK\", 60.36861, -151.30639, 1364, 17}
+}"
+                :type ("City" type (:type "class") nil nil))
+                nil [299 860])
+            ("numItems2" variable
+               (:default-value "47"
+                :type "int")
+                nil [863 883])
+            ("cities2" variable
+               (:dereference 1
+                :default-value "{  {\"Laporte\", \"CO\", 40.62637, -105.13776, 2450, 1543},
+   {\"Las_Animas\", \"CO\", 38.06667, -103.22271, 2410, 1188},
+   {\"Leadville\", \"CO\", 39.25082, -106.29252, 2602, 3097},
+   {\"Leadville_North\", \"CO\", 39.2576, -106.30138, 1794, 3073},
+   {\"Limon\", \"CO\", 39.26388, -103.69217, 1880, 1639},
+   {\"Lincoln_Park\", \"CO\", 38.42916, -105.21999, 3546, 1643},
+   {\"Littleton\", \"CO\", 39.61332, -105.01665, 41737, 1631},
+   {\"Lochbuie\", \"CO\", 40.00721, -104.71608, 4726, 1530},
+   {\"Loma\", \"CO\", 39.19581, -108.81316, 1293, 1374},
+   {\"Lone_Tree\", \"CO\", 39.55171, -104.8863, 10218, 1813},
+   {\"Longmont\", \"CO\", 40.16721, -105.10193, 86270, 1519},
+   {\"Louisville\", \"CO\", 39.97776, -105.13193, 18376, 1626},
+   {\"Loveland\", \"CO\", 40.39776, -105.07498, 66859, 1519},
+   {\"Lyons\", \"CO\", 40.22471, -105.27138, 2033, 1637},
+   {\"Mancos\", \"CO\", 37.345, -108.28925, 1336, 2142},
+   {\"Manitou_Springs\", \"CO\", 38.85971, -104.9172, 4992, 1938},
+   {\"Mead\", \"CO\", 40.23332, -104.99859, 3405, 1525},
+   {\"Meeker\", \"CO\", 40.03747, -107.91313, 2475, 1902},
+   {\"Meridian\", \"CO\", 39.55166, -104.85887, 2970, 1795},
+   {\"Milliken\", \"CO\", 40.32943, -104.85525, 5610, 1448},
+   {\"Minturn\", \"CO\", 39.58637, -106.43086, 1027, 2396},
+   {\"Monte_Vista\", \"CO\", 37.57917, -106.14808, 4444, 2336},
+   {\"Montrose\", \"CO\", 38.47832, -107.87617, 19132, 1770},
+   {\"Monument\", \"CO\", 39.09166, -104.87276, 5530, 2126},
+   {\"Mountain_Village\", \"CO\", 37.93138, -107.85645, 1320, 2926},
+   {\"Nederland\", \"CO\", 39.96138, -105.51083, 1445, 2508},
+   {\"New_Castle\", \"CO\", 39.57276, -107.53644, 4518, 1706},
+   {\"Niwot\", \"CO\", 40.10387, -105.17082, 4006, 1553},
+   {\"Northglenn\", \"CO\", 39.88554, -104.9872, 35789, 1639},
+   {\"Olathe\", \"CO\", 38.60499, -107.98229, 1849, 1633},
+   {\"Orchard_City\", \"CO\", 38.82832, -107.9709, 3119, 1660},
+   {\"Orchard_Mesa\", \"CO\", 39.04304, -108.55232, 6836, 1417},
+   {\"Ordway\", \"CO\", 38.21806, -103.75606, 1080, 1314},
+   {\"Ouray\", \"CO\", 38.02277, -107.67145, 1000, 2375},
+   {\"Pagosa_Springs\", \"CO\", 37.26945, -107.00976, 1727, 2172},
+   {\"Palisade\", \"CO\", 39.11026, -108.35092, 2692, 1441},
+   {\"Palmer_Lake\", \"CO\", 39.12221, -104.9172, 2420, 2224},
+   {\"Paonia\", \"CO\", 38.86832, -107.592, 1451, 1732},
+   {\"Parachute\", \"CO\", 39.45192, -108.05285, 1085, 1552},
+   {\"Parker\", \"CO\", 39.5186, -104.76136, 45297, 1789},
+   {\"Penrose\", \"CO\", 38.425, -105.02276, 3582, 1626},
+   {\"Perry_Park\", \"CO\", 39.25666, -104.99248, 1646, 1971},
+   {\"Platteville\", \"CO\", 40.21498, -104.82275, 2485, 1467},
+   {\"Ponderosa_Park\", \"CO\", 39.40832, -104.65108, 3232, 2037},
+   {\"Pueblo\", \"CO\", 38.25445, -104.60914, 106595, 1430},
+   {\"Pueblo_West\", \"CO\", 38.35, -104.72275, 29637, 1544},
+   {\"Rangely\", \"CO\", 40.08748, -108.80483, 2365, 1595}
+}"
+                :type ("City" type (:type "class") nil nil))
+                nil [917 3647])
+            ("sanityCheck" function
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("H" variable
+                       (:reference 1
+                        :type ("MedianHeap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3689 3706])
+                    ("lt" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3719 3728])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3729 3738]))                          
+                        :type "bool")
+                        nil nil)
+                    ("gt" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3752 3761])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3762 3771]))                          
+                        :type "bool")
+                        nil nil))                  )
+                nil [3650 6743])
+            ("main" function (:type "int") nil [6745 7390]))          
+      :file "p4test6.cpp"
+      :pointmax 7391
+      :fsize 7390
+      :lastmodtime '(23064 35572 765022 347000)
+      :unmatched-syntax nil))
+  :file "!home!Tristan!Documents!code!cs341!projects!proj4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,340 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MEDIANHEAP_H" variable (:constant-flag t) nil [30 42])
+            ("cstddef" include (:system-flag t) nil [43 61])
+            ("iostream" include (:system-flag t) nil [79 98])
+            ("Heap" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [136 143])
+                    ("Heap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("size" variable (:type "int") (reparse-symbol arg-sub-list) [268 277])
+                            ("compare" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [294 303])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [304 313]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type ("Heap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [263 600])
+                    ("Heap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [643 698])
+                    ("remove" function
+                       (:arguments 
+                          ( ("givenItem" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [850 863])
+                            ("equalTo" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [881 890])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [891 900]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [838 1206])
+                    ("get" function
+                       (:arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [1219 1227]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1212 1342])
+                    ("ReheapDown" function
+                       (:arguments 
+                          ( ("root" variable (:type "int") (reparse-symbol arg-sub-list) [1411 1420])
+                            ("bottom" variable (:type "int") (reparse-symbol arg-sub-list) [1421 1432]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1395 2554])
+                    ("ReheapUp" function
+                       (:arguments 
+                          ( ("root" variable (:type "int") (reparse-symbol arg-sub-list) [2574 2583])
+                            ("bottom" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2584 2596]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2560 3155])
+                    ("Enqueue" function
+                       (:arguments 
+                          ( ("item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3266 3280]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3253 3580])
+                    ("Dequeue" function
+                       (:arguments 
+                          ( ("topElement" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3693 3707]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3680 4010])
+                    ("getNumElements" function (:type "int") (reparse-symbol classsubparts) [4060 4114])
+                    ("getCapacity" function (:type "int") (reparse-symbol classsubparts) [4118 4168])
+                    ("printAll" function (:type "void") (reparse-symbol classsubparts) [4224 4385])
+                    ("private" label nil (reparse-symbol classsubparts) [4390 4398])
+                    ("m_data" variable
+                       (:pointer 1
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4401 4412])
+                    ("m_numElements" variable (:type "int") (reparse-symbol classsubparts) [4446 4464])
+                    ("m_capacity" variable (:type "int") (reparse-symbol classsubparts) [4498 4513])
+                    ("m_compare" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4559 4568])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4569 4578]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [4541 4579]))                  )
+                nil [100 4615])
+            ("MedianHeap" type
+               (:template 
+                  ( ("T" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [4659 4666])
+                    ("MedianHeap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("lt" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4790 4799])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4800 4809]))                                  
+                                :type "bool")
+                                nil nil)
+                            ("gt" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4823 4832])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4833 4842]))                                  
+                                :type "bool")
+                                nil nil)
+                            ("cap" variable
+                               (:default-value "100"
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4844 4855]))                          
+                        :type ("MedianHeap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4766 5056])
+                    ("MedianHeap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("otherH" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MedianHeap" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5073 5101]))                          
+                        :type ("MedianHeap" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5062 5267])
+                    ("MedianHeap" function
+                       (:destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5273 5382])
+                    ("=" function
+                       (:operator-flag t
+                        :constant-flag t
+                        :arguments 
+                          ( ("rhs" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("MedianHeap" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5419 5444]))                          
+                        :type ("MedianHeap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [5388 5470])
+                    ("size" function (:type "int") (reparse-symbol classsubparts) [5476 5564])
+                    ("capacity" function (:type "int") (reparse-symbol classsubparts) [5570 5615])
+                    ("deleteItem" function
+                       (:arguments 
+                          ( ("givenItem" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5635 5648])
+                            ("equalTo" function
+                               (:function-pointer t
+                                :arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5666 5675])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5676 5685]))                                  
+                                :type "bool")
+                                nil nil))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5619 7235])
+                    ("insert" function
+                       (:arguments 
+                          ( ("item" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [7253 7267]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [7241 8611])
+                    ("getMedian" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8617 8739])
+                    ("getMin" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8745 8865])
+                    ("getMax" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8871 8991])
+                    ("dump" function (:type "void") (reparse-symbol classsubparts) [8997 9808])
+                    ("maxHeapSize" function (:type "int") (reparse-symbol classsubparts) [9812 9877])
+                    ("minHeapSize" function (:type "int") (reparse-symbol classsubparts) [9880 9945])
+                    ("locateInMaxHeap" function
+                       (:arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [9969 9977]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [9951 10118])
+                    ("locateInMinHeap" function
+                       (:arguments 
+                          ( ("pos" variable (:type "int") (reparse-symbol arg-sub-list) [10139 10147]))                          
+                        :type ("T" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10121 10288])
+                    ("private" label nil (reparse-symbol classsubparts) [10291 10299])
+                    ("m_minHeap" variable
+                       (:pointer 1
+                        :type ("Heap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10302 10321])
+                    ("m_maxHeap" variable
+                       (:pointer 1
+                        :type ("Heap" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10324 10343])
+                    ("m_gt" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10362 10371])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10372 10381]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10349 10382])
+                    ("m_lt" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10423 10432])
+                            ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [10433 10442]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [10410 10443])
+                    ("m_minimum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10471 10483])
+                    ("m_maximum" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10486 10498])
+                    ("m_median" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10501 10512])
+                    ("m_capacity" variable (:type "int") (reparse-symbol classsubparts) [10515 10530]))                  )
+                nil [4617 10533]))          
+      :file "MedianHeap.h"
+      :pointmax 10545
+      :fsize 10544
+      :lastmodtime '(23069 55768 78107 477000)
+      :unmatched-syntax '((string 52 . 1253) (symbol 44 . 51) (punctuation 43 . 44))
+      :lexical-table 
+        '(("MEDIANHEAP_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("HEAP_H" variable (:constant-flag t) nil [363 369]))          
+      :file "Heap.h"
+      :pointmax 380
+      :fsize 4950
+      :lastmodtime '(23069 55404 130973 218000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HEAP_H")
+          )
+))
+  :file "!home!Tristan!Documents!code!cs341!projects!proj4!upload!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

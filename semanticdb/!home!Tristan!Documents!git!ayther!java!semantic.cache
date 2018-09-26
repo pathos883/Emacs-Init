@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("java.io.*" include nil nil [1 18])
+            ("java.net.*" include nil nil [19 37])
+            ("control" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [91 104]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [67 690])
+                    ("writeJSON" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [696 768]))                  
+                :type "class")
+                nil [40 770]))          
+      :file "control.java"
+      :pointmax 771
+      :fsize 770
+      :lastmodtime '(23001 60524 627194 698000)
+      :unmatched-syntax nil))
+  :file "!home!Tristan!Documents!git!ayther!java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

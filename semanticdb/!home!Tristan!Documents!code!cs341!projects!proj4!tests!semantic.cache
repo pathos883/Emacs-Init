@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode makefile-gmake-mode
+      :tags 
+        '( ("CXX" variable (:default-value ("g++")) nil [1 11])
+            ("CXXFLAGS" variable (:default-value ("-std=c++98" "-g")) nil [11 36])
+            ("DEPS" variable (:default-value ("Heap.h" "MedianHeap.h")) nil [36 63])
+            ("%.o" function (:arguments ("%.cpp" "$(DEPS)")) nil [79 155]))          
+      :file "makefile"
+      :pointmax 375
+      :fsize 374
+      :lastmodtime '(23068 22435 206642 425000)
+      :unmatched-syntax nil))
+  :file "!home!Tristan!Documents!code!cs341!projects!proj4!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
